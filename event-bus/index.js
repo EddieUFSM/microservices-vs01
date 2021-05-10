@@ -11,7 +11,7 @@ const events = []
 app.post('/events', async (req, res) => {
     const event = req.body
 
-    event.push(event)
+    events.push(event)
     axios.post('http://localhost:4000/events', event)
     axios.post('http://localhost:4001/events', event)
     axios.post('http://localhost:4002/events', event)
